@@ -5,6 +5,7 @@ import Header from "../components/common/header";
 import Footer from "../components/common/footer";
 import { ClerkProvider } from '@clerk/nextjs';
 import { Toaster } from '@/components/ui/sonner';
+import { ORIGIN_URL } from '@/utils/helpers';
 
 const fontSans = FontSans({
   variable: "--font-sans",
@@ -15,6 +16,10 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Summarize with AI | SumAI",
   description: "Summarize AI is a tool that helps you summarize text.",
+  metadataBase: new URL(ORIGIN_URL),
+  alternates: {
+    canonical: ORIGIN_URL,
+  }
 };
 
 export default function RootLayout({
