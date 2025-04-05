@@ -96,9 +96,9 @@ export default function UploadForm() {
                 console.error(err);
                 showErrorToast(); // Show error toast on upload error
             },
-            onUploadBegin: ({ file }) => {
-                console.log("upload has begun for", file);
-            },
+            // onUploadBegin: ({ file }) => {
+            //     console.log("upload has begun for", file);
+            // },
         });
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -126,7 +126,7 @@ export default function UploadForm() {
 
             // Upload the file to uploadthing
             const resp = await startUpload([file]);
-            if(!resp || !resp[0]?.serverData?.file?.url) {
+            if(!resp || !resp[0]?.serverData?.fileUrl) {
                 showErrorToast();
                 setIsLoading(false);
                 return;
@@ -135,7 +135,24 @@ export default function UploadForm() {
             showProcessingToast();
 
             // Parse the pdf using langchain
-            const result = await generatePdfSummary(resp);
+            const transformedResp = resp.map(item => ({
+                serverData: {
+                    userId: item.serverData.userId,
+                    file: {
+                        url: item.serverData.fileUrl,
+                        name: file.name,
+                    },
+                },
+            }));
+            const result = await generatePdfSummary(transformedResp as [{
+                serverData: {
+                    userId: string;
+                    file: {
+                        url: string;
+                        name: string;
+                    };
+                };
+            }]);
 
             const { data, message } = result || { data: null, message: null };
 
@@ -147,7 +164,7 @@ export default function UploadForm() {
                     // Save to db
                     storeResult = await storePdfSummaryAction({
                         summary: data.summary,
-                        fileUrl: resp[0].serverData.file.url,
+                        fileUrl: resp[0].serverData.fileUrl,
                         title: data.title,
                         fileName: file.name,
                     });
