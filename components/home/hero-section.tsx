@@ -38,7 +38,7 @@ export default function HeroSection() {
              transition= {{ duration: 0.5, delay: 0.1 }}
              variants={itemVariants}
              className="font-bold py-6 text-center">
-                Transform PDFs into{' '}
+                Detect Fake News Quickly with{' '}
                 <span className="relative inline-block">
                     <MotionSpan 
                         transition= {{ duration: 0.5, delay: 0.1 }}
@@ -48,7 +48,7 @@ export default function HeroSection() {
                     </MotionSpan>
                     <span className="absolute inset-0 bg-rose-200/50 -rotate rounded-lg transform -skew-y-1" aria-hidden="true"></span>
                 </span>{' '}
-                Summaries
+                Reports
             </MotionH1>
             <MotionH2 
                 initial= {{ opacity: 0 }}
@@ -64,7 +64,7 @@ export default function HeroSection() {
                 transition= {{ duration: 0.5, delay: 0.2 }}>
                 <Button variant={'link'} className="text-white mt-6 text-base sm:text-lg lg:text-xl rounded-full px-8 sm:px-10 lg:px-12 py-6 sm:py-7 lg-py-8 lg:mt-16 bg-linear-to-r from-slate-900 to-rose-500 hover:from-rose-500 hover:to-slate-900 font-bold hover:no-underline shawdow-lg transition-all duration-300">
                     <Link href={"/#pricing"} className="flex gap-2 items-center">
-                        <span>Try SumAI</span>
+                        <span>Try TruthLens</span>
                         <ArrowRight className="animate-pulse" />
                     </Link>
                 </Button>

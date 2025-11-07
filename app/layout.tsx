@@ -14,8 +14,8 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Summarize with AI | SumAI",
-  description: "Summarize AI is a tool that helps you summarize text.",
+  title: "Fake News Detector | TruthLens",
+  description: "TruthAI is an intelligent tool that helps you detect and analyze fake news.",
   metadataBase: new URL(ORIGIN_URL),
   alternates: {
     canonical: ORIGIN_URL,

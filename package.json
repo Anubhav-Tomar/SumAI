@@ -1,5 +1,5 @@
 {
-  "name": "sumai",
+  "name": "truthlens",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -15,6 +15,7 @@
     "@langchain/community": "^0.3.36",
     "@langchain/core": "^0.3.42",
     "@neondatabase/serverless": "^0.10.4",
+    "@next/swc-darwin-arm64": "^16.0.1",
     "@radix-ui/react-dialog": "^1.1.6",
     "@radix-ui/react-slot": "^1.1.2",
     "@radix-ui/react-toast": "^1.2.6",

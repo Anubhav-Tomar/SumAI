@@ -11,7 +11,7 @@ export default function EmptySummaryState() {
           No summaries yet
         </h2>
         <p className="text-gray-500 max-w-md">
-          Upload your first PDF to get started with AI-powered summaries.
+          Upload a File — let AI reveal what’s real.
         </p>
         <Link href="/upload">
           <Button

@@ -43,7 +43,7 @@ export default async function DashboardPage() {
                              initial="hidden"
                              animate="visible"
                              className="text-gray-600">
-                                Transform your PDFs into concise, actionable insights
+                                Detect misinformation and uncover the truth in any article or document.
                             </MotionP>
                         </div>
 

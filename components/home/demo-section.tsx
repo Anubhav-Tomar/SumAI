@@ -3,33 +3,35 @@ import { MotionDiv, MotionH3 } from "../common/motion-wrapper";
 import { SummaryViewer } from "../summaries/summary-viewer";
 
 const DEMO_SUMMARY = `# Quick Overview
-• 🎯 Quickly convert long, dense PDFs into easy-to-read summaries in seconds.
-• ⏳ Saves users time by extracting only the most important information.
+• 🎯 Instantly analyze news articles and online content to detect misinformation.
+• ⏳ Saves users time by flagging untrustworthy sources and highlighting factual inconsistencies.
 
 # Key Highlights
-• 📝 Transforms lengthy PDFs into clear, actionable summaries.
-• 📚 Supports various PDF types including research papers, business reports, and eBooks.
-• 🔑 Easily extract key points and highlights in just a few clicks.
+• 🧠 Uses AI to identify fake news, misinformation, and biased reporting.
+• 🌐 Works across various content types including news websites, blogs, and social media posts.
+• ✅ Provides credibility scores and evidence-backed verification in just a few clicks.
 
 # Why It Matters
-• 🌍 Helps people absorb critical information from long documents without spending hours reading, improving productivity and keeping users informed.
+• 🌍 Helps users stay accurately informed in a world flooded with misinformation.
+• 🛡 Protects against manipulation, clickbait, and misleading headlines by providing trustworthy insights.
 
 # Main Points
-• 💡 Quickly capture the essence of complex documents without losing important details.
-• ⏱ Saves time and boosts efficiency for people who deal with large volumes of text.
-• 🎯 Perfect for those needing summarized content for presentations, reports, or academic work.
+• 🔎 Automatically assess the reliability of any article or news source.
+• 📉 Reduces time spent fact-checking by delivering instant credibility analysis.
+• 📢 Ideal for journalists, researchers, educators, and anyone who values truth in media.
 
 # Pro Tips
-• 💼 Use this tool to review reports and research papers quickly before meetings or deadlines.
-• 🔄 Try summarizing multiple PDFs at once for batch processing to maximize efficiency.
-• 📰 Regularly use the tool to stay updated with long-form content in your industry.
+• 📥 Use the tool before sharing articles to avoid spreading misinformation.
+• 👥 Great for group discussions, classrooms, or editorial teams to assess news validity together.
+• 📲 Install the browser extension for real-time detection while browsing the web.
 
 # Key Terms to Know
-• 📑 Summarization: The process of condensing a document to highlight the main points.
-• 🧠 Key Insights: The essential takeaways or actionable ideas from the document.
+• 📰 Fake News: False or misleading information presented as legitimate news.
+• 🤖 AI Detection: The use of artificial intelligence to analyze patterns, sources, and content for truthfulness.
+• 📊 Credibility Score: A rating that indicates how trustworthy a piece of content or its source is.
 
 # Bottom Line
-• ⚡ Transform your PDF documents into concise summaries that help you save time, stay informed, and boost productivity.
+• ⚡ Empower yourself with the tools to detect fake news, protect your information space, and promote informed decision-making—fast, easy, and reliable.
 `;
 
 export default function DemoSection() {
@@ -53,11 +55,11 @@ export default function DemoSection() {
                          whileInView= {{ opacity: 1, y: 0 }}
                          transition= {{ duration: 0.5, delay: 0.2 }}
                          className="font-bold text-3xl max-w-2xl mx-auto px-4 sm:px-6">
-                            Watch how SumAI transform {' '}
+                            See how TruthLens scans {' '}
                             <span className="bg-linear-to-r from-rose-500 to-rose-700 bg-clip-text text-transparent">
-                                this PDF
+                                this news piece
                             </span> {' '}
-                            into an easy-to-read summary!
+                            and delivers a clear, verified report!
                         </MotionH3>   
                     </div>
                     <div className="flexjustify-center items-center px-2 sm:px-4 lg:px-6">

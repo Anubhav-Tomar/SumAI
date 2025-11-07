@@ -4,7 +4,7 @@ export default function Footer() {
           <div className="container mx-auto text-center px-4">
             <div className="mb-6">
               <p className="text-lg sm:text-xl font-semibold">
-                SumAI
+                TruthLens
               </p>
               <p className="text-sm sm:text-base">
                 &copy; {new Date().getFullYear()} All rights reserved.

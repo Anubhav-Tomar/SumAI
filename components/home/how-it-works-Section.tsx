@@ -50,7 +50,7 @@ export default function HowItWorksSection() {
                      whileInView= {{ opacity: 1, y: 0 }}
                      transition={{ duration: 0.5, delay: 0.2 }}
                      className="font-bold text-3xl max-w-2xl mx-auto">
-                        Transform any PDF into an easy-to-digest summary in three simple steps
+                        Verify news accuracy quickly in three simple steps
                     </MotionH3>
                 </div>
 
